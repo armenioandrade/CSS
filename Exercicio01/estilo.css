@@ -1,0 +1,38 @@
+body{
+    background-color: chocolate;
+}
+#login{
+    color: aliceblue;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: bold;
+  }
+
+#divLogin{
+    width: 25%;
+    margin-top: 200px;
+    
+}
+button:hover{
+    opacity: 0.8;
+}
+button{
+    background-color: rgba(0, 0, 0, 0.411);
+    color: white;
+    margin: 8px 0;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    size: 150px;
+}
+
