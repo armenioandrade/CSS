@@ -73,3 +73,50 @@ li a:hover {
 #logoutLi {
     float: right;
 }
+#divCadastro{
+  display: none;
+  width: 200px;
+}
+#formCadastro{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+a.greenbutton:link, a.greenbutton:visited {
+  background-color: #47b547;
+  color: #111;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  
+}
+a.greenbutton:hover, a.greenbutton:active {
+  background-color: green;
+}
+a.yellowbutton:link, a.yellowbutton:visited {
+  background-color: #ffe600;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+a.yellowbutton:hover, a.yellowbutton:active {
+  background-color: yellow;
+}
+#botoes{
+  margin-top: 3px;
+  display: flex;
+  flex-direction: 20px;
+  gap: 10px;
+  
+}
+a.yellowbutton{
+  margin-left: auto;
+  border-radius: 3px;
+}
+a.greenbutton{
+  border-radius: 3px;
+}

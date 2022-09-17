@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Exercicio 01</title>
+    <link rel="stylesheet" href="./css/estiloLogin.css">
+    <script defer src="./scripts/script.js"></script>
+    <title>Login Cars</title>
 </head>
 
-<body>
+<body onload="randombg()">
     <div id="divLogin">
+        <p>Login de Usuário</p>
         <form id="login" method="post" action="Menu.html">
             <label for="uname">Username:</label><input type="text" id="txtLogin" required>
             <label for="psw">Password: </label><input type="password" id="txtPassword" required>
-            <button type="submit">Login</button>
+            <a id="botaoLogin" href="Menu.html">Login</a>
         </form>
+    </div>
+    <div id="divImagem" >
+
     </div>
 
 </body>

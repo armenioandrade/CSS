@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estiloMenu.css">
+    <link rel="stylesheet" href="./css/estiloMenu.css">
+    <script defer src="./scripts/script.js"></script>
+    
     <title>Menu de Sistema</title>
 </head>
 
 <body>
     <ul>
-        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Clientes</a>
+        <div class="dropdown-content">
+              <a href="#divCadastro" onclick="myFunction()">Cadastro</a>
+        </div>
         <li><a href="">Fornecedores</a></li>
         <li><a href="">Veiculos</a></li>
         <li class="dropdown">
@@ -23,6 +30,26 @@
             </div>        
         <li id="logoutLi"><a class="active" href="Login.html">Sair</a></li>
     </ul>
+
+    <!--Cadastro Cliente-->
+    <div id="divCadastro">
+        <form id="formCadastro">
+            Nome:<input type="text">
+            CPF:<input type="text">
+            Email:<input type="text">
+            Telefone:<input type="text">
+            Sexo:<select>
+                <option></option>
+                <option>Feminino</option>
+                <option>Masculino</option>
+            </select>
+            Data de Nascimento:<input type="date">
+            <div id="botoes">
+                <a href="#Pesquisar" class="yellowbutton">Pesquisar</a>
+            <a href="#Salvar" class="greenbutton">Salvar</a>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

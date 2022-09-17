@@ -1,0 +1,61 @@
+*{
+ font-family: Arial, Helvetica, sans-serif;
+ margin: 0px;
+}
+body{
+    background-color: chocolate;
+}
+p{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+
+}
+#login{
+    color: aliceblue;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#divLogin{
+    width: 250px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 30px;   
+    
+}
+#botaoLogin{
+    background-color: black;
+    text-decoration: none;
+    color: aliceblue;
+    padding:  5px 5px 5px 5px;
+    border-color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 10px;
+    width: 45px;
+    
+}
+#botaoLogin:hover{
+    opacity: 0.8;
+    background-color: orangered;
+    
+}
+#divImagem{
+    border: 1px solid; 
+    box-shadow: 5px 10px #111;
+    padding: 10px;
+    height: 100%;
+    width: 85%;  
+    position: absolute;
+    right: 0px;
+    /*background-image: url('../images/3.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
