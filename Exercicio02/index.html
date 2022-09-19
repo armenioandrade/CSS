@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Doctor</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav class="navmenu">
+        <a class="menu" href="#">Home</a>
+        <a class="menu" href="#" onclick="menuMedico()">Medico</a>
+        <a class="menu" href="#" onclick="menuPaciente()">Paciente</a>
+        <a class="menu" href="#" onclick="menuReceita()">Receita</a>
+        <a class="menu" href="#">Logout</a>
+      </nav>
+      <main id="superMain">
+    <main class="main" style="display: none;" id="mainMedico">
+      <fieldset class="novoCadastro" >
+        <legend>Médico</legend>
+        <label>Nome:</label>
+        <span>
+          <input type=text>
+        </span>
+        <label>CPF:</label>
+        <span>
+          <input type=text>
+        </span>
+        <label>CRM:</label>
+        <span>
+          <input type=text>
+        </span>
+        <label>Sexo:</label>
+        <span>
+          <select>
+            <option></option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+          </select>
+        </span>
+          <span>
+            <input type=button value="Salvar" id="botaoSalvar">
+            <input type=button value="Pesquisar" id="botaoPesquisar">
+          </span>
+      </fieldset>
+    </main>
+      <main class="main" id="mainPaciente" style="display: none;">
+      <fieldset class="novoCadastro">
+        <legend>Paciente</legend>
+        <label>Nome:</label>
+        <span>
+          <input type=text>
+        </span>
+        <label>CPF:</label>
+        <span>
+          <input type=text>
+        </span>
+        <label>Data de Nascimento:</label>
+        <span>
+          <input type="date">
+        </span>
+        <label>Sexo:</label>
+        <span>
+          <select>
+            <option></option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+          </select>
+        </span>
+          <span>
+            <input type=button value="Salvar" id="botaoSalvar">
+            <input type=button value="Pesquisar" id="botaoPesquisar">
+          </span>
+      </fieldset>
+    </main>
+    <main class="main" id="mainReceita" style="display: none;">
+        <fieldset class="novoCadastro">
+          <legend>Receita</legend>
+          <label>Médico:</label>
+          <span>
+            <select>
+            <option value=""></option>
+            <option value="">Medico1</option>
+            <option value="">Medico2</option>
+            <option value="">Medico3</option>
+            </select>
+            </span>
+            <label>Paciente:</label>
+          <span>
+            <select>
+            <option value=""></option>
+            <option value="">Paciente1</option>
+            <option value="">Paciente2</option>
+            <option value="">Paciente3</option>
+            </select>
+            </span>
+            <label>Descrição:</label>
+            <span>
+              <textarea rows="20" cols="50"></textarea>
+              </span>
+            
+            <span>
+              <input type=button value="Salvar" id="botaoSalvar">
+              <input type=button value="Pesquisar" id="botaoPesquisar">
+            </span>
+        </fieldset>
+      </main>
+</main>
+</body>
+</html>
