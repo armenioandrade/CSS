@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Doctor</title>
-    <link rel="stylesheet" href="estilo.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Doctor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilo.css">
+  <script defer src="script.js"></script>
 </head>
+
 <body>
-    <nav class="navmenu">
-        <a class="menu" href="#">Home</a>
-        <a class="menu" href="#" onclick="menuMedico()">Medico</a>
-        <a class="menu" href="#" onclick="menuPaciente()">Paciente</a>
-        <a class="menu" href="#" onclick="menuReceita()">Receita</a>
-        <a class="menu" href="#">Logout</a>
-      </nav>
-      <main id="superMain">
+  <nav class="navmenu">
+    <a class="menu" href="#">Home</a>
+    <a class="menu" href="#" onclick="menuMedico()">Medico</a>
+    <a class="menu" href="#" onclick="menuPaciente()">Paciente</a>
+    <a class="menu" href="#" onclick="menuReceita()">Receita</a>
+    <a class="menu" href="#">Logout</a>
+  </nav>
+  <main id="superMain">
     <main class="main" style="display: none;" id="mainMedico">
-      <fieldset class="novoCadastro" >
+      <fieldset class="novoCadastro">
         <legend>Médico</legend>
         <label>Nome:</label>
         <span>
@@ -40,13 +44,13 @@
             <option>Feminino</option>
           </select>
         </span>
-          <span>
-            <input type=button value="Salvar" id="botaoSalvar">
-            <input type=button value="Pesquisar" id="botaoPesquisar">
-          </span>
+        <span>
+          <input type=button value="Salvar" id="botaoSalvar">
+          <input type=button value="Pesquisar" id="botaoPesquisar" onclick="resultadoMedico()">
+        </span>
       </fieldset>
     </main>
-      <main class="main" id="mainPaciente" style="display: none;">
+    <main class="main" id="mainPaciente" style="display: none;">
       <fieldset class="novoCadastro">
         <legend>Paciente</legend>
         <label>Nome:</label>
@@ -69,44 +73,61 @@
             <option>Feminino</option>
           </select>
         </span>
-          <span>
-            <input type=button value="Salvar" id="botaoSalvar">
-            <input type=button value="Pesquisar" id="botaoPesquisar">
-          </span>
+        <span>
+          <input type=button value="Salvar" id="botaoSalvar">
+          <input type=button value="Pesquisar" id="botaoPesquisar">
+        </span>
       </fieldset>
     </main>
-    <main class="main" id="mainReceita" style="display: none;">
-        <fieldset class="novoCadastro">
-          <legend>Receita</legend>
-          <label>Médico:</label>
-          <span>
-            <select>
+    <main class="main receita" id="mainReceita" style="display: none;">
+      <fieldset class="novoCadastroReceita">
+        <legend>Receita</legend>
+        <label>Médico:</label>
+        <span>
+          <select>
             <option value=""></option>
             <option value="">Medico1</option>
             <option value="">Medico2</option>
             <option value="">Medico3</option>
-            </select>
-            </span>
-            <label>Paciente:</label>
-          <span>
-            <select>
+          </select>
+        </span>
+        <label>Paciente:</label>
+        <span>
+          <select>
             <option value=""></option>
             <option value="">Paciente1</option>
             <option value="">Paciente2</option>
             <option value="">Paciente3</option>
-            </select>
-            </span>
-            <label>Descrição:</label>
-            <span>
-              <textarea rows="20" cols="50"></textarea>
-              </span>
-            
-            <span>
-              <input type=button value="Salvar" id="botaoSalvar">
-              <input type=button value="Pesquisar" id="botaoPesquisar">
-            </span>
-        </fieldset>
-      </main>
-</main>
+          </select>
+        </span>
+        <label>Descrição:</label>
+        <span>
+          <textarea rows="20" cols="50"></textarea>
+        </span>
+        <span>
+          <input type=button value="Salvar" id="botaoSalvar">
+          <input type=button value="Pesquisar" id="botaoPesquisar">
+        </span>
+      </fieldset>
+    </main>
+    <div id="resultadoMedico" style="display: none;">
+      <table class="resultado table">
+        <caption>size() Médicos Encontrados</caption>
+        <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>CRM</th>
+        <th>Sexo</th>
+        </tr>
+        <tr>
+          <td>Medico1</td>
+          <td>cpf1</td>
+          <td>crm1</td>
+          <td>sexo1</td>
+        </tr>
+      </table>
+    </div>
+  </main>
 </body>
+
 </html>
